@@ -9,7 +9,7 @@ $(document).ready(function() {
       $(this).css('opacity',"1");
     });
 });
-	$(function(){
+$(function(){
 		// 幫 #qaContent 的 ul 子元素加上 .accordionPart
 		// 接著再找出 li 中的第一個 div 子元素加上 .qa_title
 		// 並幫其加上 hover 及 click 事件
@@ -28,3 +28,12 @@ $(document).ready(function() {
 			$qa_content.slideToggle();
 		}).siblings().addClass('qa_content').hide();
 	});
+	
+$(function(){
+	$('.file-content').hide();
+
+	$('body').on('click', '.file-download', function(){
+		$('#file-dialog-title').text($(this).find('.file-title').text());
+		$('#file-dialog-body').html($(this).find('.file-content').html());
+	});
+});
