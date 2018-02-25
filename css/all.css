@@ -259,7 +259,7 @@ html, body {
 	text-align: right;
 	line-height: normal;
     z-index: 9999;
-	width:15%;
+	width:25%;
 }
 
 @media screen and (max-width: 768px) {
@@ -303,15 +303,14 @@ html, body {
   .admission-list {
     text-align: center;
   }
-  
-  .addthis_toolbox{
-	  right:9%;
-  }
+
 
 }
 
 
-
+.custom_images{
+	right:0;
+}
 .custom_images a {
 	display: inline-block;
 	opacity: 1;
